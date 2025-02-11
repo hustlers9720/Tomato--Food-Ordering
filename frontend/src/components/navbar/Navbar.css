@@ -1,0 +1,138 @@
+.navbar {
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-left {
+    flex: 1;
+    /* Pushes logo to the left */
+}
+
+.navbar .logo {
+    width: 90px;
+
+    margin-left: -10px;
+    /* Moves it a bit more left */
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+    /* Reduced gap */
+    color: #49557e;
+    font-size: 15px;
+    /* Made list items smaller */
+    flex: 2;
+    /* Keeps menu centered */
+    justify-content: center;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    /* Pushes buttons to the right */
+    justify-content: flex-end;
+    margin-right: -10px;
+}
+
+.navbar-right .icon {
+    width: 16px;
+    /* Adjust icon size */
+    /* height: 24px; */
+    cursor: pointer;
+}
+
+.navbar button {
+    background: transparent;
+    font-size: 10px;
+    color: #49557e;
+    border: 1px solid tomato;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3;
+}
+
+.navbar button:hover {
+    background-color: #fff4f2;
+}
+
+.navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+
+.navbar li {
+    cursor: pointer;
+}
+
+.navbar-search-icon {
+    position: relative;
+}
+
+.navbar-search-icon .dot {
+    position: absolute;
+    min-width: 8px;
+    min-height: 8px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -5px;
+    right: -1px;
+}
+
+.navbar-profile {
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar-profile img {
+    width: 15px;
+    border-radius: 20%;
+}
+
+.nav-profile-dropdown {
+    position: absolute;
+    display: none;
+    right: 0;
+    top: 10px;
+    /* Adjusted for better positioning */
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    padding: 2px 0;
+    width: 120px;
+    /* Slightly larger for better visibility */
+    font-size: 12px;
+    /* Smaller text for a compact look */
+}
+
+.nav-profile-dropdown li {
+    padding: 6px 8px;
+    /* Reduced padding for a smaller size */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-profile-dropdown li img {
+    width: 14px;
+    /* Reduced icon size */
+    height: 14px;
+}
+
+.nav-profile-dropdown li:hover {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+/* Ensure dropdown appears on hover */
+.navbar-profile:hover .nav-profile-dropdown {
+    display: block;
+}

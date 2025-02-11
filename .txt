@@ -1,0 +1,14 @@
+for the image 
+1. multer --> middleware use or the image upload
+const storage = multer.diskStorage({
+    destination: 'uploads',
+    filename: (req, file, cb) => {
+        return cb(null, `${Date.now()}${file.originalname}`);
+    }
+})
+
+const upload = multer({ storage: storage })
+
+usee (upload)this in the endpoint as middlware 
+
+2.

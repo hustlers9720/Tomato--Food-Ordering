@@ -1,0 +1,70 @@
+.orders-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+}
+
+.order-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.order-item div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: left;
+}
+
+.order-item-food {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.order-address,
+.order-status,
+.order-amount {
+    font-size: 14px;
+    color: #555;
+}
+
+.order-status {
+    color: #007bff;
+}
+
+.order-amount {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.order-status-dropdown {
+    padding: 8px;
+    border: 1px solid tomato;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: tomato;
+    cursor: pointer;
+    margin-left: auto;
+    /* Pushes dropdown to the right */
+}
