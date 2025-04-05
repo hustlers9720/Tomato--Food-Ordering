@@ -3,7 +3,7 @@ import './Verify.css'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { StoreContext } from '../../context/StoreContext';
 import axios from 'axios';
-const Verify = () => {
+const Verified = () => {
 
     const [searchParams, setSearchParams] = useSearchParams();
     const success = searchParams.get('success')
@@ -33,4 +33,4 @@ const Verify = () => {
     )
 }
 
-export default Verify
+export default Verified
