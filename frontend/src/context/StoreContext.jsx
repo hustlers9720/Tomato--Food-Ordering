@@ -7,7 +7,7 @@ const StoreContextProvider = (props) => {
     const currency = '$'
     const [cartItem, setCartItem] = useState({});
     // const backendUrl = 'http://localhost:3000'
-    const backendUrl = 'https://tomato-food-ordering.onrender.com/'
+    const backendUrl = 'https://tomato-food-ordering.onrender.com'
     const [token, setToken] = useState('')
     const [food_list, setFoodList] = useState([])
     // console.log(token);
